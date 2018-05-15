@@ -1,4 +1,4 @@
-package com.spring.boot.configServer;
+package com.spring.cloud.configServer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

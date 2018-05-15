@@ -1,4 +1,4 @@
-package com.spring.boot.configClient.configclient;
+package com.spring.cloud.configClient;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.spring.boot.configClient.configclient;
+package com.spring.cloud.configClient;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
