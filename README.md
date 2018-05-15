@@ -1,2 +1,2 @@
-# spring-boot
-Spring Boot &amp; Spring Cloud exercises/examples
+# spring-cloud
+pring Cloud exercises/examples
