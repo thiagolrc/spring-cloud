@@ -1,0 +1,12 @@
+---
+server:
+  port: ${PORT:8010}
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false #to run a single instance -> NOT FOR PRODUCTION
+    fetchRegistry: false #NOT FOR PRODUCTION
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka #,http://eureka2:8010/eureka #PRODUCTION
