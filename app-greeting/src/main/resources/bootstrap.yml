@@ -2,3 +2,7 @@
 spring:
   application:
     name: app-greeting
+  cloud:
+    config:
+      uri: http://localhost:8001
+      failFast: true
