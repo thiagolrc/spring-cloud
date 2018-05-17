@@ -4,19 +4,19 @@ server:
 
 ---
 spring:
-  profile: morning
+  profiles: morning
 
 greetings: Good morning %s!#Hi %s, have a nice day!#Hi %s, enjoy the day!
 
 ---
 spring:
-  profile: lunch
+  profiles: lunch
 
 greetings: Hey %s, shall we have lunch?#Hi %s, would you like to join us for lunch?#Enjoy your meal %s!
 
 ---
 spring:
-  profile: afternoon
+  profiles: afternoon
 
 greetings: Good evening %s!#Bye bye %s, see you tomorrow!
 

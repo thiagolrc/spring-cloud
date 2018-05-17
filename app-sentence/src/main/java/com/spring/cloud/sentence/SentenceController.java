@@ -15,6 +15,8 @@ public class SentenceController {
 
 	@Autowired
 	private DiscoveryClient discoveryClient;
+	@Autowired
+	private RestTemplate restTemplate;
 
 	@GetMapping("/sentence")
 	public String getSentence() {
@@ -25,6 +27,8 @@ public class SentenceController {
 	}
 
 	public String getWord(String service) {
+		/*
+		//Using service discovery to get a URI for a service manually (not the best approach, of course
 		List<ServiceInstance> list = discoveryClient.getInstances(service);
 		if (list != null && list.size() > 0 ) {
 			URI uri = list.get(0).getUri();
@@ -33,5 +37,10 @@ public class SentenceController {
 			}
 		}
 		return null;
+		*/
+
+		//Using Ribbon with default configs which runs a round-robin algorithm and relies on eureka to obtain the list of
+		//actual healthy servers. This can cause some requests since eureka takes some time to unregistered servers that stopped running
+		return restTemplate.getForObject("http://"+service, String.class);
 	}
 }
