@@ -1,1 +1,4 @@
+spring:
+  profiles: default
+
 greetings: Hi %s!#Hello %s!#Hi %s! What's up?!#Hey %s! How are you doing?
