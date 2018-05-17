@@ -12,7 +12,7 @@ public class PersonController {
 
 	@GetMapping("/")
 	public String getWord() {
-		String[] personArray = persons.split(",");
+		String[] personArray = persons.split("#");
 		int i = (int)Math.round(Math.random() * (personArray.length - 1));
 		return personArray[i];
 	}

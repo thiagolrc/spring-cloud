@@ -12,7 +12,7 @@ public class GreetingController {
 
 	@GetMapping("/")
 	public String getWord() {
-		String[] greetingArray = greetings.split(",");
+		String[] greetingArray = greetings.split("#");
 		int i = (int)Math.round(Math.random() * (greetingArray.length - 1));
 		return greetingArray[i];
 	}
