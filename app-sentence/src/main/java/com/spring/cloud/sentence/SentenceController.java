@@ -1,5 +1,7 @@
 package com.spring.cloud.sentence;
 
+import com.spring.cloud.sentence.dao.GreetingService;
+import com.spring.cloud.sentence.dao.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

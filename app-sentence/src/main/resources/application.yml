@@ -1,3 +1,7 @@
 ---
 server:
   port: 9010
+
+feign:
+  hystrix:
+    enabled: true
