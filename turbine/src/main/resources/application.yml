@@ -1,0 +1,10 @@
+---
+server:
+  port: 9020
+
+turbine:
+  clusterNameExpression: "'default'"
+  app-config: app-sentence
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream
+  combine-host-port: true

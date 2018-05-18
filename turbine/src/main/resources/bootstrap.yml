@@ -1,7 +1,7 @@
 ---
 spring:
   application:
-    name: app-greeting
+    name: turbine
   cloud:
     config:
       uri: http://localhost:8001

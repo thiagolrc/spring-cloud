@@ -1,2 +1,2 @@
 # spring-cloud
-pring Cloud exercises/examples
+Spring Cloud exercises/examples
