@@ -22,7 +22,7 @@ public class SentenceApplication {
 	}
 
 	@Bean
-	@LoadBalanced
+	@LoadBalanced //Load balances restTemplate with ribbon
 	RestTemplate restTemplate() {
 		return new RestTemplate();
 	}

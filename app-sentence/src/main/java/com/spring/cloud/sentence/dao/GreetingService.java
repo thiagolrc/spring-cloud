@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * ATTENTION
+ * Ribbon is automatically enabled
+ *
+ * <b>ATTENTION</b>
  * There is a limitation with the implementation of fallbacks in Feign and how Hystrix fallbacks work.
  * Fallbacks are currently not supported for methods that return com.netflix.hystrix.HystrixCommand and rx.Observable
  */
