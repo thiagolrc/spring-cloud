@@ -17,3 +17,6 @@ include 'app-greeting'
 include 'app-sentence'
 include 'turbine'
 include 'zuul'
+include 'bus-config-server'
+include 'bus-config-client'
+
